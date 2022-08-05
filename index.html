@@ -27,6 +27,14 @@
         background-color: blue;
         box-shadow: 1px 1px 10px red;
       }
+      .squares > div {
+        left: 0;
+        top: 0;
+      }
+      .squares > div:hover {
+        left: 0;
+        top: 0;
+      }
       #connect-outer {
         margin: 0 auto;
         width: 100%;
@@ -53,7 +61,11 @@
         display: block;
         margin: 0 auto;
         margin-top: calc((100vh - 60px) /2);
+        transition: all 0.3s ease-in-out;
       }
+      #connect-outer > div > button:hover {
+        box-shadow: 0 0 8px #252525;
+        transition: all 0.3s ease-in-out;
     </style>
   </head>
   <body>
